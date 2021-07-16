@@ -1,7 +1,7 @@
-console.log("common.js 로딩")
+console.log("common.js 로딩중")
 
 function MySlider__init() {
-  var swiper = new Swiper(".mySwiper", {
+  var swiper = new Swiper(".swiper-container", {
     slidesPerView: 1,
     loop: true,
     pagination: {
