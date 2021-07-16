@@ -96,7 +96,7 @@ a {
   pointer-events: none;
   opacity: 0;
   color: #fff;
-  font-size:8vw;
+  font-size:5vw;
   letter-spacing: -1px;
   transform:scale(0.8);
   transition: 1s ease;
@@ -107,4 +107,31 @@ a {
   opacity: 1;
   transform:scale(1);
   transition: 1s ease;
+}
+
+.site-wrap .mySwiper .swiper-pagination {
+  position:static;
+  display:flex;
+  justify-content:center;
+  margin-top:20px;
+}
+
+.site-wrap .swiper-container .swiper-pagination-bullets .swiper-pagination-bullet {
+  border-radius:initial;
+  width:100px;
+  height:100px;
+  background:initial;
+  opacity:0.5;
+  outline:0;
+  border-radius:50%;
+  overflow:hidden;
+  margin:0 5px;
+}
+
+.site-wrap .swiper-container .swiper-pagination-bullets .swiper-pagination-bullet > img {
+  display:block;
+}
+
+.site-wrap .swiper-container .swiper-pagination-bullets .swiper-pagination-bullet.swiper-pagination-bullet-active {
+  opacity:1;
 }
