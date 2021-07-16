@@ -1,0 +1,19 @@
+body,ul,li{
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.site-wrap{
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.site-wrap > * {
+  flex-shrink: 0;
+}
