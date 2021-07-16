@@ -120,6 +120,7 @@ a {
   transform:scale(0.8);
   transition: 1s ease;
   text-transform: uppercase;
+  font-size: 2rem;
 }
 
 .swiper-slide-active .swiper-slide__text  {
