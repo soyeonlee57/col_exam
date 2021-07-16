@@ -4,6 +4,10 @@ body,ul,li{
   list-style: none;
 }
 
+body{
+  height: 100vh;
+}
+
 a {
   text-decoration: none;
   color:white;
@@ -31,19 +35,11 @@ a {
   width: 50vw;
   height: 50vh;
 }
+
   html,
   body {
     position: relative;
     height: 100%;
-  }
-
-  body {
-    background: #eee;
-    font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
-    font-size: 14px;
-    color: #000;
-    margin: 0;
-    padding: 0;
   }
 
   .swiper-container {
@@ -55,6 +51,8 @@ a {
     text-align: center;
     font-size: 18px;
     background: #fff;
+    width: 100vw;
+    height: 80vh;
 
     /* Center slide text vertically */
     display: -webkit-box;
@@ -100,11 +98,20 @@ a {
   color:white;
 }
 
+.swiper-container .swiper-pagination-bullets .swiper-pagination-bullet {
+  width: 12px;
+  height: 12px;
+  background-color:inherit;
+  border: 2px solid white;
+  border-radius: 50%;
+  opacity: 1;
+}
+
 .swiper-container .swiper-pagination-bullets .swiper-pagination-bullet-active {
   background-color: #fff;
 }
 
-.swiper-slide h2 {
+.swiper-slide .swiper-slide__text  {
   pointer-events: none;
   opacity: 0;
   color: #ffffff;
