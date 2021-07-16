@@ -1,83 +1,91 @@
 <!DOCTYPE html>
 <html lang="ko">
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>col_blog</title>
+  
   <!-- jQuery -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  
   <!-- font-awsome -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
-  <!-- swiper -->
-  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
-  
+
   <!-- tailwind -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.4/tailwind.min.css">
+  
+  <!-- swiper -->
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+  
   <!-- css -->
   <link rel="stylesheet" href="style.css">
   <!-- js -->
-  <script src="common.js"></script>
+  <script src="common.js" defer></script>
 </head>
-<body>
-<div class="site-wrap">
-  <header class="h-12 bg-black top-bar">
-    <div class="container flex h-full mx-auto">
-      <a href="./" class="flex items-center px-4 logo">
-        <i class="fas fa-code" style="color: white;"></i>
-      </a>
-      <div class="flex-grow"></div>
-      <ul class="flex top-bar_menu-box-1">
-        <li>
-        <a href="./" class="flex items-center h-full px-4">
-          <i class="fas fa-home" style="color: white;"></i>
-          &nbsp;
-        HOME     
-        </a>
-      </li>
-      <li>
-        <a href="./" class="flex items-center h-full px-4">
-          <i class="fas fa-archive" style="color: white;"></i>
-          &nbsp;
-        Portfolio     
-        </a>
-      </li>
-      </ul>
-    </div>
-  </header>
 
-  <!-- Swiper -->
-  <div class="swiper-container mySwiper">
-    <div class="swiper-wrapper">
-      <div class="swiper-slide" style="background-image:url(https://source.unsplash.com/random?sig=24);">
-        <div class="siper-slide__text">slide 1</div>
+<body>
+  <div class="site-wrap">
+    <header class="h-12 bg-black top-bar">
+      <div class="container flex h-full mx-auto">
+        <a href="./" class="flex items-center px-4 logo">
+          <i class="fas fa-code" style="color: white;"></i>
+        </a>
+        <div class="flex-grow"></div>
+        <ul class="flex top-bar_menu-box-1">
+          <li>
+            <a href="./" class="flex items-center h-full px-4">
+              <i class="fas fa-home" style="color: white;"></i>
+              &nbsp;
+              HOME
+            </a>
+          </li>
+          <li>
+            <a href="./" class="flex items-center h-full px-4">
+              <i class="fas fa-archive" style="color: white;"></i>
+              &nbsp;
+              Portfolio
+            </a>
+          </li>
+        </ul>
       </div>
-      <div class="swiper-slide" style="background-image:url(https://source.unsplash.com/random?sig=53);">
-        <div class="siper-slide__text">slide 2</div>
+    </header>
+
+    <!-- Swiper -->
+    <div class="swiper-container mySwiper">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide" style="background-image:url(https://source.unsplash.com/random?sig=24);">
+          <div class="siper-slide__text">slide 1</div>
+        </div>
+        <div class="swiper-slide" style="background-image:url(https://source.unsplash.com/random?sig=53);">
+          <div class="siper-slide__text">slide 2</div>
+        </div>
+        <div class="swiper-slide" style="background-image:url(https://source.unsplash.com/random?sig=52)">
+          <div class="siper-slide__text">slide 3</div>
+        </div>
+        <div class="swiper-slide" style="background-image:url(https://source.unsplash.com/random?sig=21);">
+          <div class="siper-slide__text">slide 4</div>
+        </div>
+        <div class="swiper-slide" style="background-image:url(https://source.unsplash.com/random?sig=50)">
+          <div class="siper-slide__text">slide 5</div>
+        </div>
+        <div class="swiper-slide" style="background-image:url(https://source.unsplash.com/random?sig=55)">
+          <div class="siper-slide__text">slide 6</div>
+        </div>
+        <div class="swiper-slide" style="background-image:url(https://source.unsplash.com/random?sig=57)">
+          <div class="siper-slide__text">slide 7</div>
+        </div>
       </div>
-      <div class="swiper-slide" style="background-image:url(https://source.unsplash.com/random?sig=52)">
-        <div class="siper-slide__text">slide 3</div>
-      </div>
-      <div class="swiper-slide" style="background-image:url(https://source.unsplash.com/random?sig=21);">
-        <div class="siper-slide__text">slide 4</div>
-      </div>
-      <div class="swiper-slide" style="background-image:url(https://source.unsplash.com/random?sig=50)">
-        <div class="siper-slide__text">slide 5</div>
-      </div>
-      <div class="swiper-slide" style="background-image:url(https://source.unsplash.com/random?sig=55)">
-        <div class="siper-slide__text">slide 6</div>
-      </div>
-      <div class="swiper-slide" style="background-image:url(https://source.unsplash.com/random?sig=57)">
-        <div class="siper-slide__text">slide 7</div>
-      </div>
+
+      <div class="swiper-button-next"></div>
+      <div class="swiper-button-prev"></div>
+
+      <div class="swiper-pagination"></div>
+
     </div>
-    
-    <div class="swiper-button-next"></div>
-    <div class="swiper-button-prev"></div>
-    
-    <div class="swiper-pagination"></div>
-    
   </div>
-</div>
 </body>
+
 </html>
