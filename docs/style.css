@@ -4,10 +4,6 @@ body,ul,li{
   list-style: none;
 }
 
-body {
-  height: 100vh;
-}
-
 a {
   text-decoration: none;
   color:white;
@@ -23,15 +19,6 @@ a {
   flex-shrink: 0;
 }
 
-<<<<<<< HEAD
-/* html,
-body {
-  position: relative;
-  height: 100vh;
-} */
-
-=======
->>>>>>> 6159d65a7d0b28bb82cc8f93ac2cdfb29adba452
 .swiper-container {
   width: 100%;
   height: 100%;
@@ -41,11 +28,35 @@ body {
   text-align: center;
   font-size: 18px;
   background: #fff;
-  width: 100vw;
-  height: 80vh;
+  width: 50vw;
+  height: 50vh;
+}
+  html,
+  body {
+    position: relative;
+    height: 100%;
+  }
 
+  body {
+    background: #eee;
+    font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    color: #000;
+    margin: 0;
+    padding: 0;
+  }
 
-  Center slide text vertically{
+  .swiper-container {
+    width: 100%;
+    height: 100%;
+  }
+
+  .swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+
+    /* Center slide text vertically */
     display: -webkit-box;
     display: -ms-flexbox;
     display: -webkit-flex;
@@ -93,7 +104,7 @@ body {
   background-color: #fff;
 }
 
-.swiper-slide .swiper-slide__text {
+.swiper-slide h2 {
   pointer-events: none;
   opacity: 0;
   color: #ffffff;
@@ -102,10 +113,9 @@ body {
   transform:scale(0.8);
   transition: 1s ease;
   text-transform: uppercase;
-  font-size: 2rem;
 }
 
-.swiper-slide-active .swiper-slide__text {
+.swiper-slide-active h2 {
   opacity: 1;
   transform:scale(1);
   transition: 1s ease;
