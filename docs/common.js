@@ -1,3 +1,4 @@
+console.log("common.js 로딩")
 var swiper = new Swiper(".mySwiper", {
   slidesPerView: 1,
   loop: true,

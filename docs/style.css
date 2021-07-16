@@ -1,3 +1,23 @@
+body,ul,li{
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.site-wrap{
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.site-wrap > * {
+  flex-shrink: 0;
+}
+
 html,
 body {
   position: relative;
@@ -13,6 +33,8 @@ body {
   text-align: center;
   font-size: 18px;
   background: #fff;
+  width: 50vw;
+  height: 50vh;
 
   /* Center slide text vertically */
   display: -webkit-box;
